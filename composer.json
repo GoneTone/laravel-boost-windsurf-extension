@@ -1,0 +1,59 @@
+{
+    "name": "gonetone/laravel-boost-windsurf-extension",
+    "description": "Laravel Boost extension package that provides Windsurf editor and Windsurf JetBrains plugin integration.",
+    "keywords": [
+        "laravel",
+        "boost",
+        "ai",
+        "development",
+        "dev",
+        "windsurf",
+        "jetbrains",
+        "phpstorm",
+        "editor",
+        "ide"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GoneTone",
+            "homepage": "https://github.com/GoneTone"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/GoneTone/laravel-boost-windsurf-extension/issues",
+        "source": "https://github.com/GoneTone/laravel-boost-windsurf-extension"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.49.0|^11.45.3|^12.28.1",
+        "laravel/boost": "^1.4"
+    },
+    "require-dev": {
+        "laravel/pint": "1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoneTone\\LaravelBoostWindsurf\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GoneTone\\LaravelBoostWindsurf\\WindsurfServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint",
+        "pint-test": "vendor/bin/pint --test"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
