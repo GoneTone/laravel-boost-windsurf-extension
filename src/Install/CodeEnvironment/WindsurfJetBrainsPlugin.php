@@ -46,6 +46,7 @@ class WindsurfJetBrainsPlugin extends CodeEnvironment implements Agent, McpClien
                 'paths' => [
                     '%ProgramFiles%\\JetBrains\\PhpStorm*',
                     '%LOCALAPPDATA%\\JetBrains\\Toolbox\\apps\\PhpStorm\\ch-*',
+                    '%LOCALAPPDATA%\\Programs\\PhpStorm',
                 ],
             ],
         };
