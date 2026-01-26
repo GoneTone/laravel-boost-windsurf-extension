@@ -35,7 +35,7 @@ Laravel Boost will auto-detect the Windsurf installation automatically. Run the 
 php artisan boost:install
 ```
 
-During installation, you will be prompted to select an environment. The available options will include the following two:
+During installation, you will be prompted to select an AI agent. The available options will include the following two:
 
 - `cascade` - For Windsurf Editor
 - `cascade_jetbrains` - For Windsurf JetBrains Plugin (PhpStorm, etc.)

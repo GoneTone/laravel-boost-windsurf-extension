@@ -35,7 +35,7 @@ Laravel Boost 会自动检测 Windsurf 的安装状态。运行以下命令来�
 php artisan boost:install
 ```
 
-在安装过程中，系统会提示您选择环境。可用的选项会增加以下两个：
+在安装过程中，系统会提示您选择 AI 代理。可用的选项会增加以下两个：
 
 - `cascade` - 适用于 Windsurf 编辑器
 - `cascade_jetbrains` - 适用于 Windsurf JetBrains 插件 (PhpStorm 等)
