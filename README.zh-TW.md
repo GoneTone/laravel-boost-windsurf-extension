@@ -12,9 +12,9 @@
 
 ## 系統需求
 
-- PHP 8.1 或更高版本
-- Laravel 10.0 或更高版本
-- Laravel Boost 1.4 或更高版本
+- PHP 8.2 或更高版本
+- Laravel 11.0 或更高版本
+- Laravel Boost 2.0 或更高版本
 - [Windsurf 編輯器](https://windsurf.com/editor) 或 [Windsurf JetBrains 外掛程式](https://plugins.jetbrains.com/plugin/20540-windsurf-plugin-formerly-codeium-for-python-js-java-go--)
 
 ## 安裝方式
@@ -37,8 +37,8 @@ php artisan boost:install
 
 在安裝過程中，系統會提示您選擇環境。可用的選項會增加以下兩個：
 
-- `windsurf` - 適用於 Windsurf 編輯器
-- `windsurf_jetbrains_plugin` - 適用於 Windsurf JetBrains 外掛程式 (PhpStorm 等)
+- `cascade` - 適用於 Windsurf 編輯器
+- `cascade_jetbrains` - 適用於 Windsurf JetBrains 延伸模組 (PhpStorm 等)
 
 ## 在專案之間切換
 

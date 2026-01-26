@@ -12,9 +12,9 @@ A Laravel Composer package that provides [Windsurf](https://windsurf.com/) integ
 
 ## Requirements
 
-- PHP 8.1 or higher
-- Laravel 10.0 or higher
-- Laravel Boost 1.4 or higher
+- PHP 8.2 or higher
+- Laravel 11.0 or higher
+- Laravel Boost 2.0 or higher
 - [Windsurf Editor](https://windsurf.com/editor) or [Windsurf JetBrains Plugin](https://plugins.jetbrains.com/plugin/20540-windsurf-plugin-formerly-codeium-for-python-js-java-go--)
 
 ## Installation
@@ -37,8 +37,8 @@ php artisan boost:install
 
 During installation, you will be prompted to select an environment. The available options will include the following two:
 
-- `windsurf` - For Windsurf Editor
-- `windsurf_jetbrains_plugin` - For Windsurf JetBrains Plugin (PhpStorm, etc.)
+- `cascade` - For Windsurf Editor
+- `cascade_jetbrains` - For Windsurf JetBrains Plugin (PhpStorm, etc.)
 
 ## Switching Between Projects
 

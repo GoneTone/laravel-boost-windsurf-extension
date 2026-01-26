@@ -2,49 +2,49 @@
 
 declare(strict_types=1);
 
-namespace GoneTone\LaravelBoostWindsurf\Install\CodeEnvironment;
+namespace GoneTone\LaravelBoostWindsurf\Install\Agents;
 
-use Laravel\Boost\Contracts\Agent;
-use Laravel\Boost\Contracts\McpClient;
-use Laravel\Boost\Install\CodeEnvironment\CodeEnvironment;
+use Laravel\Boost\Contracts\SupportsGuidelines;
+use Laravel\Boost\Contracts\SupportsMcp;
+use Laravel\Boost\Install\Agents\Agent;
 use Laravel\Boost\Install\Enums\Platform;
 
-class Windsurf extends CodeEnvironment implements Agent, McpClient
+class CascadeJetBrains extends Agent implements SupportsGuidelines, SupportsMcp
 {
-    public bool $useAbsolutePathForMcp = true;
-
     public function name(): string
     {
-        return 'windsurf';
+        return 'cascade_jetbrains';
     }
 
     public function displayName(): string
     {
-        return 'Windsurf';
+        return 'Cascade (JetBrains)';
     }
 
-    public function agentName(): string
+    public function useAbsolutePathForMcp(): bool
     {
-        return 'Cascade';
+        return true;
     }
 
     public function systemDetectionConfig(Platform $platform): array
     {
         return match ($platform) {
             Platform::Darwin => [
-                'paths' => ['/Applications/Windsurf.app'],
+                'paths' => ['/Applications/PhpStorm.app'],
             ],
             Platform::Linux => [
                 'paths' => [
-                    '/opt/windsurf',
-                    '/usr/local/bin/windsurf',
-                    '~/.local/bin/windsurf',
+                    '/opt/phpstorm',
+                    '/opt/PhpStorm*',
+                    '/usr/local/bin/phpstorm',
+                    '~/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-*',
                 ],
             ],
             Platform::Windows => [
                 'paths' => [
-                    '%ProgramFiles%\\Windsurf',
-                    '%LOCALAPPDATA%\\Programs\\Windsurf',
+                    '%ProgramFiles%\\JetBrains\\PhpStorm*',
+                    '%LOCALAPPDATA%\\JetBrains\\Toolbox\\apps\\PhpStorm\\ch-*',
+                    '%LOCALAPPDATA%\\Programs\\PhpStorm',
                 ],
             ],
         };
@@ -63,7 +63,7 @@ class Windsurf extends CodeEnvironment implements Agent, McpClient
         $home = getenv('HOME') ?: getenv('USERPROFILE');
 
         // Windsurf only has a global MCP configuration file, so the absolute path must be obtained.
-        return $home.DIRECTORY_SEPARATOR.'.codeium'.DIRECTORY_SEPARATOR.'windsurf'.DIRECTORY_SEPARATOR.'mcp_config.json';
+        return $home.DIRECTORY_SEPARATOR.'.codeium'.DIRECTORY_SEPARATOR.'mcp_config.json';
     }
 
     public function guidelinesPath(): string
