@@ -12,9 +12,9 @@
 
 ## 系统要求
 
-- PHP 8.1 或更高版本
-- Laravel 10.0 或更高版本
-- Laravel Boost 1.4 或更高版本
+- PHP 8.2 或更高版本
+- Laravel 11.0 或更高版本
+- Laravel Boost 2.0 或更高版本
 - [Windsurf 编辑器](https://windsurf.com/editor) 或 [Windsurf JetBrains 插件](https://plugins.jetbrains.com/plugin/20540-windsurf-plugin-formerly-codeium-for-python-js-java-go--)
 
 ## 安装方法
@@ -35,17 +35,17 @@ Laravel Boost 会自动检测 Windsurf 的安装状态。运行以下命令来�
 php artisan boost:install
 ```
 
-在安装过程中，系统会提示您选择环境。可用的选项会增加以下两个：
+在安装过程中，系统会提示您选择 AI 代理。可用的选项会增加以下两个：
 
-- `windsurf` - 适用于 Windsurf 编辑器
-- `windsurf_jetbrains_plugin` - 适用于 Windsurf JetBrains 插件 (PhpStorm 等)
+- `cascade` - 适用于 Windsurf 编辑器
+- `cascade_jetbrains` - 适用于 Windsurf JetBrains 插件 (PhpStorm 等)
 
 ## 在项目之间切换
 
 由于 Windsurf 仅支持全局级别的 MCP 配置文件，不支持项目级别的 MCP 配置文件，因此当您在不同的 Laravel 项目之间切换时，需要运行以下命令来更新 MCP 配置：
 
 ```bash
-php artisan boost:install --no-interaction
+php artisan boost:install --mcp --no-interaction
 ```
 
 这可确保 Windsurf 的 MCP 配置指向当前项目的正确路径。

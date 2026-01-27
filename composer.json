@@ -26,12 +26,12 @@
         "source": "https://github.com/GoneTone/laravel-boost-windsurf-extension"
     },
     "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.49.0|^11.45.3|^12.28.1",
-        "laravel/boost": "^1.4"
+        "php": "^8.2",
+        "illuminate/support": "^11.45.3|^12.41.1",
+        "laravel/boost": "^2.0"
     },
     "require-dev": {
-        "laravel/pint": "1.20"
+        "laravel/pint": "^1.27.0"
     },
     "autoload": {
         "psr-4": {

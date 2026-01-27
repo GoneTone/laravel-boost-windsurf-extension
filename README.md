@@ -12,9 +12,9 @@ A Laravel Composer package that provides [Windsurf](https://windsurf.com/) integ
 
 ## Requirements
 
-- PHP 8.1 or higher
-- Laravel 10.0 or higher
-- Laravel Boost 1.4 or higher
+- PHP 8.2 or higher
+- Laravel 11.0 or higher
+- Laravel Boost 2.0 or higher
 - [Windsurf Editor](https://windsurf.com/editor) or [Windsurf JetBrains Plugin](https://plugins.jetbrains.com/plugin/20540-windsurf-plugin-formerly-codeium-for-python-js-java-go--)
 
 ## Installation
@@ -35,17 +35,17 @@ Laravel Boost will auto-detect the Windsurf installation automatically. Run the 
 php artisan boost:install
 ```
 
-During installation, you will be prompted to select an environment. The available options will include the following two:
+During installation, you will be prompted to select an AI agent. The available options will include the following two:
 
-- `windsurf` - For Windsurf Editor
-- `windsurf_jetbrains_plugin` - For Windsurf JetBrains Plugin (PhpStorm, etc.)
+- `cascade` - For Windsurf Editor
+- `cascade_jetbrains` - For Windsurf JetBrains Plugin (PhpStorm, etc.)
 
 ## Switching Between Projects
 
 Since Windsurf only supports global-level MCP configuration files and does not have project-level MCP configuration files, you need to run the following command to update the MCP configuration when switching between different Laravel projects:
 
 ```bash
-php artisan boost:install --no-interaction
+php artisan boost:install --mcp --no-interaction
 ```
 
 This ensures that Windsurf MCP configuration points to the correct path for the current project.
