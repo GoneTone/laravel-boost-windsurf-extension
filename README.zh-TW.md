@@ -45,7 +45,7 @@ php artisan boost:install
 由於 Windsurf 僅支援全域層級的 MCP 設定檔，並不支援專案層級的 MCP 設定檔，因此當您在不同的 Laravel 專案之間切換時，需要執行以下指令來更新 MCP 設定：
 
 ```bash
-php artisan boost:install --no-interaction
+php artisan boost:install --mcp --no-interaction
 ```
 
 這可確保 Windsurf 的 MCP 設定指向目前專案的正確路徑。

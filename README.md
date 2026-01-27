@@ -45,7 +45,7 @@ During installation, you will be prompted to select an AI agent. The available o
 Since Windsurf only supports global-level MCP configuration files and does not have project-level MCP configuration files, you need to run the following command to update the MCP configuration when switching between different Laravel projects:
 
 ```bash
-php artisan boost:install --no-interaction
+php artisan boost:install --mcp --no-interaction
 ```
 
 This ensures that Windsurf MCP configuration points to the correct path for the current project.
