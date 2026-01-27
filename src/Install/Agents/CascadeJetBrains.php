@@ -6,10 +6,11 @@ namespace GoneTone\LaravelBoostWindsurf\Install\Agents;
 
 use Laravel\Boost\Contracts\SupportsGuidelines;
 use Laravel\Boost\Contracts\SupportsMcp;
+use Laravel\Boost\Contracts\SupportsSkills;
 use Laravel\Boost\Install\Agents\Agent;
 use Laravel\Boost\Install\Enums\Platform;
 
-class CascadeJetBrains extends Agent implements SupportsGuidelines, SupportsMcp
+class CascadeJetBrains extends Agent implements SupportsGuidelines, SupportsMcp, SupportsSkills
 {
     public function name(): string
     {
@@ -69,5 +70,10 @@ class CascadeJetBrains extends Agent implements SupportsGuidelines, SupportsMcp
     public function guidelinesPath(): string
     {
         return '.windsurfrules';
+    }
+
+    public function skillsPath(): string
+    {
+        return '.windsurf/skills';
     }
 }
