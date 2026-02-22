@@ -74,11 +74,11 @@ class Cascade extends Agent implements SupportsGuidelines, SupportsMcp, Supports
 
     public function guidelinesPath(): string
     {
-        return '.windsurfrules';
+        return 'AGENTS.md';
     }
 
     public function skillsPath(): string
     {
-        return '.windsurf/skills';
+        return '.agents/skills';
     }
 }
