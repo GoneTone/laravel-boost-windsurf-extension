@@ -28,7 +28,7 @@
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11.45.3|^12.41.1",
-        "laravel/boost": "^2.0"
+        "laravel/boost": "^2.1.6"
     },
     "require-dev": {
         "laravel/pint": "^1.27.0"
