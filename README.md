@@ -13,8 +13,8 @@ A Laravel Composer package that provides [Windsurf](https://windsurf.com/) integ
 ## Requirements
 
 - PHP 8.2 or higher
-- Laravel 11.0 or higher
-- Laravel Boost 2.0 or higher
+- Laravel 11.45.3 / 12.41.1 or higher
+- Laravel Boost 2.1.6 or higher
 - [Windsurf Editor](https://windsurf.com/editor) or [Windsurf JetBrains Plugin](https://plugins.jetbrains.com/plugin/20540-windsurf-plugin-formerly-codeium-for-python-js-java-go--)
 
 ## Installation

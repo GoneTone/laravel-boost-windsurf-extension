@@ -13,8 +13,8 @@
 ## 系统要求
 
 - PHP 8.2 或更高版本
-- Laravel 11.0 或更高版本
-- Laravel Boost 2.0 或更高版本
+- Laravel 11.45.3 / 12.41.1 或更高版本
+- Laravel Boost 2.1.6 或更高版本
 - [Windsurf 编辑器](https://windsurf.com/editor) 或 [Windsurf JetBrains 插件](https://plugins.jetbrains.com/plugin/20540-windsurf-plugin-formerly-codeium-for-python-js-java-go--)
 
 ## 安装方法
