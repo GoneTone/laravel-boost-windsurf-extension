@@ -65,6 +65,13 @@ class Cascade extends Agent implements SupportsGuidelines, SupportsMcp, Supports
         return $home.DIRECTORY_SEPARATOR.'.codeium'.DIRECTORY_SEPARATOR.'windsurf'.DIRECTORY_SEPARATOR.'mcp_config.json';
     }
 
+    public function httpMcpServerConfig(string $url): array
+    {
+        return [
+            'serverUrl' => $url,
+        ];
+    }
+
     public function guidelinesPath(): string
     {
         return '.windsurfrules';
