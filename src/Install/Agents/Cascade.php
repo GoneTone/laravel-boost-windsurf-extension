@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace GoneTone\LaravelBoostWindsurf\Install\Agents;
 
+use Illuminate\Support\Facades\Config;
 use Laravel\Boost\Contracts\SupportsGuidelines;
 use Laravel\Boost\Contracts\SupportsMcp;
 use Laravel\Boost\Contracts\SupportsSkills;
@@ -74,11 +75,11 @@ class Cascade extends Agent implements SupportsGuidelines, SupportsMcp, Supports
 
     public function guidelinesPath(): string
     {
-        return '.windsurfrules';
+        return Config::get('boost.agents.cascade.guidelines_path', 'AGENTS.md');
     }
 
     public function skillsPath(): string
     {
-        return '.windsurf/skills';
+        return Config::get('boost.agents.cascade.skills_path', '.agents/skills');
     }
 }
