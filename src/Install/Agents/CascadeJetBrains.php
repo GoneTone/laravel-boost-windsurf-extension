@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace GoneTone\LaravelBoostWindsurf\Install\Agents;
 
 use Illuminate\Support\Facades\Config;

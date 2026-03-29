@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace GoneTone\LaravelBoostWindsurf;
 
 use GoneTone\LaravelBoostWindsurf\Install\Agents\Cascade;
